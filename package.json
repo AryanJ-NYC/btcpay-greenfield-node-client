@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -10,6 +10,17 @@
   "engines": {
     "node": ">=10"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AryanJ-NYC/btcpay-greenfield-node-client"
+  },
+  "keywords": [
+    "btc",
+    "btcpay",
+    "btcpayserver",
+    "bitcoin",
+    "lightning"
+  ],
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -32,7 +43,7 @@
     "trailingComma": "es5"
   },
   "name": "btcpay-greenfield-node-client",
-  "author": "Aryan Jabbari",
+  "author": "Aryan Jabbari <AryanJabbari@gmail.com>",
   "module": "dist/btcpay-greenfield-node-client.esm.js",
   "size-limit": [
     {

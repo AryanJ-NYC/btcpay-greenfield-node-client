@@ -2,9 +2,15 @@
 
 ## Installation
 
-`yarn add btcpay-greenfield-node-client`
+```bash
+yarn add btcpay-greenfield-node-client
+```
+
 or
-`npm install btcpay-greenfield-node-client`
+
+```bash
+npm install btcpay-greenfield-node-client
+```
 
 ## Configuration
 
