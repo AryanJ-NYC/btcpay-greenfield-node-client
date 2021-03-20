@@ -56,6 +56,11 @@ OpenAPI.PASSWORD = () => {
 
 ## Development
 
+1. Run `yarn generate`
+2. Commit
+3. Run `yarn build`
+4. Publish to `npm`
+
 ## Acknowledgement
 
 This library leverages the work done by [@ferdikoomen](https://github.com/ferdikoomen) in [openapi-typescript-codegen](https://github.com/ferdikoomen/openapi-typescript-codegen).

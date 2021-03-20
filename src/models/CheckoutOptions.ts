@@ -14,21 +14,25 @@ export type CheckoutOptions = {
      */
     paymentMethods?: Array<string> | null;
     /**
-     * The number of minutes after which an invoice becomes expired. Default to the store's settings. (The default store settings is 15)
+     * The number of minutes after which an invoice becomes expired. Defaults to the store's settings. (The default store settings is 15)
      */
     expirationMinutes?: number | null;
     /**
-     * The number of minutes after an invoice expired after which we are still monitoring for incoming payments. Default to the store's settings. (The default store settings is 1440, 1 day)
+     * The number of minutes after an invoice expired after which we are still monitoring for incoming payments. Defaults to the store's settings. (The default store settings is 1440, 1 day)
      */
     monitoringMinutes?: number | null;
     /**
-     * A percentage determining whether to count the invoice as paid when the invoice is paid within the specified margin of error. Default to the store's settings. (The default store settings is 100)
+     * A percentage determining whether to count the invoice as paid when the invoice is paid within the specified margin of error. Defaults to the store's settings. (The default store settings is 100)
      */
     paymentTolerance?: number | null;
     /**
-     * When the customer paid the invoice, the URL where the customer will be redirected when clicking on the `return to store` button. You can use placeholders `{InvoiceId}` or `{OrderId}` in the URL, BTCPay Server will replace those with this invoice `id` or `metadata.orderId` respectively.
+     * When the customer has paid the invoice, the URL where the customer will be redirected when clicking on the `return to store` button. You can use placeholders `{InvoiceId}` or `{OrderId}` in the URL, BTCPay Server will replace those with this invoice `id` or `metadata.orderId` respectively.
      */
     redirectURL?: string | null;
+    /**
+     * When the customer has paid the invoice, and a `redirectURL` is set, the checkout is redirected to `redirectURL` automatically if `redirectAutomatically` is true. Defaults to the store's settings. (The default store settings is false)
+     */
+    redirectAutomatically?: boolean | null;
     /**
      * The language code (eg. en-US, en, fr-FR...) of the language presented to your customer in the checkout page. BTCPay Server tries to match the best language available. If null or not set, will fallback on the store's default language. You can see the list of language codes with [this operation](#operation/langCodes).
      */

@@ -194,7 +194,7 @@ export class InvoicesService {
 
     /**
      * Mark invoice status
-     * Mark an invoice as invalid or completed.
+     * Mark an invoice as invalid or settled.
      * @returns InvoiceData The updated invoice
      * @throws ApiError
      */
