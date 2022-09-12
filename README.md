@@ -14,6 +14,13 @@ npm install btcpay-greenfield-node-client
 
 ## Configuration
 
+`btcpay-greenfield-node-client` uses Btcpay Greenfield API keys. To create an API Key in BTCPay:
+
+1. Click on the "Account" icon on the bottom-left corner of BTCPay.
+2. Click "Manage Account"
+3. Click into the "API Keys" tab.
+4. Go through the "Generate Key" process.
+
 ### Set Base URL
 
 ```typescript
